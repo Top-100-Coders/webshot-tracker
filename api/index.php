@@ -4,9 +4,9 @@
 // Auther : Shitheesh, Ajish, Ashish, Adharsh, Sidharth
 // Change Api key at line number 112 if openai API key expired
 
-
+define('API_KEY', 'GPT-4_api_key_here');
 error_reporting(0);
-
+$OPEN_API_KEY = API_KEY;
 if ($_FILES['webshot_file']['error'] == 0) {
 
     $fileName = $_FILES['webshot_file']['name'];
@@ -109,7 +109,7 @@ function get_analytics($url){
       CURLOPT_POSTFIELDS => $curl_post_fields,
       CURLOPT_HTTPHEADER => array(
         'Content-Type: application/json',
-        'Authorization: Bearer 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' // Change the Open ai api keyif expired
+        'Authorization: Bearer $OPEN_API_KEY' // Change the Open ai api keyif expired
       ),
     ));
 
