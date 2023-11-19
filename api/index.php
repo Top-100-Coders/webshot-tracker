@@ -4,9 +4,9 @@
 // Auther : Shitheesh, Ajish, Ashish, Adharsh, Sidharth
 // Change Api key at line number 112 if openai API key expired
 
-
+define('API_KEY', 'GPT-4_api_key_here');
 error_reporting(0);
-
+$OPEN_API_KEY = API_KEY;
 if ($_FILES['webshot_file']['error'] == 0) {
 
     $fileName = $_FILES['webshot_file']['name'];
@@ -36,7 +36,6 @@ if ($_FILES['webshot_file']['error'] == 0) {
 	curl_close($curl);
 
 	$resp_arr = json_decode($response,true);
-	// print_r($resp_arr);die;
 	$allowedImageTypes = array(
 	    'image/jpeg',
 	    'image/png',
@@ -109,12 +108,11 @@ function get_analytics($url){
       CURLOPT_POSTFIELDS => $curl_post_fields,
       CURLOPT_HTTPHEADER => array(
         'Content-Type: application/json',
-        'Authorization: Bearer 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' // Change the Open ai api keyif expired
+        'Authorization: Bearer $OPEN_API_KEY' // Change the Open ai api keyif expired
       ),
     ));
 
     $response = curl_exec($curl);
-    // echo $response;
     curl_close($curl);
     $response_arr = json_decode($response,true);
     //check whether the request was given proper message
@@ -123,8 +121,6 @@ function get_analytics($url){
 
         // Extract the JSON from the message content
         $transformed = transform_response($message);
-        // $transformed = json_decode($message);
-        // echo $transformed;die;
         return array("status" => true,"data" => $transformed);
     }else if($response_arr['error'] && $response_arr['error']['message']){
     	return array("status" => false,'error' => array("message"=>$response_arr['error']['message']));
@@ -135,30 +131,13 @@ function get_analytics($url){
     }
 }
 
+// Calling extract json fn
 function transform_response($message){
     $json = extract_json($message);
-    // echo $json;
     return ($json) ? $json : null;
 }
 
-function return_sample_response(){
-    $data = [
-        'score' => 'CTR score of the website',
-        'positives' => [
-            'The website has a clear and prominent call-to-action with \'Start a free trial\' and \'Book a demo\' buttons.',
-            'The value proposition is immediately clear with the headline \'Make AI your expert customer support agent\'.',
-            'The site lists appealing features such as \'Personalized onboarding help\' and \'95+ languages supported\'.',
-            'There\'s a trust indicator with the badge \'PRODUCT HUNT #1 Product of the Day\'.'
-        ],
-        'improvements' => [
-            'The chatbot overlay on the bottom right could be a bit intrusive; consider minimizing it by default.',
-            'The color contrast between the text and background can be increased for better readability, especially for users with visual impairments.',
-            'Provide more detailed descriptions of the features or benefits to inform users clearly about the unique advantages over competitors.',
-            'Introduce customer testimonials or case studies for social proof directly on the homepage.'
-        ]
-    ];
-    return $data;    
-}
+// Pricessing chat gpt response and extracting json
 function extract_json($str) {
     // print_r($str);
     $regex = '/{(?:[^{}]|(?R))*}/'; // recursive pattern to match braces
