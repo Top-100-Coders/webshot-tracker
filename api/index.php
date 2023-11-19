@@ -1,7 +1,7 @@
 <?php
 
 // Project : webshot tracker
-// Auther : Shitheesh, Ajish, Ashish, Adharsh, Sidharth
+// Auther : Shitheesh, Ajish, Ashish
 // Change Api key at line number 112 if openai API key expired
 
 define('API_KEY', 'GPT-4_api_key_here');
