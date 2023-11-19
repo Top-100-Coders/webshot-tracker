@@ -109,7 +109,7 @@ function get_analytics($url){
       CURLOPT_POSTFIELDS => $curl_post_fields,
       CURLOPT_HTTPHEADER => array(
         'Content-Type: application/json',
-        'Authorization: Bearer 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' // Change the Open ai api keyif expired
+        'Authorization: Bearer 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' // Change the Open ai api keyif expired
       ),
     ));
 
