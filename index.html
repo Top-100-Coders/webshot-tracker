@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webshot Rater</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="icon" type="image/x-icon" href="img/meta-img.png" />
+  </head>
+  <body>
+    <div class="isolate flex min-h-screen flex-col">
+      <header class="sticky z-50 bg-white/90 backdrop-blur-lg inset-x-0 top-0 border-b border-gray-100 py-3">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between">
+            <div class="shrink-0">
+              <a aria-current="page" class="isomorphic-link isomorphic-link--internal flex items-center" href="/">
+                <img class="h-6 w-auto md:h-7 webshotlogo" src="img/WEBSHOT.png" alt="">
+              </a>
+            </div>
+            <!--<div class="hidden items-center justify-center gap-4 lg:flex">
+              <a class="isomorphic-link isomorphic-link--internal text-sm font-semibold leading-5 transition-all duration-150 rounded-lg px-2 py-1.5 text-gray-950 hover:bg-gray-100 hover:text-blue-600" href="/features">Features</a>
+              <a class="isomorphic-link isomorphic-link--internal text-sm font-semibold leading-5 transition-all duration-150 rounded-lg px-2 py-1.5 text-gray-950 hover:bg-gray-100 hover:text-blue-600" href="/integrations">How to use</a>
+              <a class="isomorphic-link isomorphic-link--internal text-sm font-semibold leading-5 transition-all duration-150 rounded-lg px-2 py-1.5 text-gray-950 hover:bg-gray-100 hover:text-blue-600" href="/demo">Live Demo</a>
+            </div>-->
+            <div class="flex items-center justify-end gap-4">
+              <a class="isomorphic-link isomorphic-link--internal inline-flex items-center justify-center bg-blue-600 text-sm font-semibold leading-5 text-white shadow-sm transition-all duration-150 rounded-lg px-3 py-1.5 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="analyze.html">Analyse your Website</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="bg-gradient-to-b from-white to-blue-50 pb-12 pt-8 sm:pb-16 lg:pb-20">
+          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 items-center gap-y-12 lg:grid-cols-2">
+              <div class="max-w-xl mx-auto text-center lg:max-w-none lg:mx-0 lg:text-left">
+                <h1 class="font-display text-4xl font-bold tracking-tight text-gray-900 mt-8 sm:text-5xl lg:text-6xl xl:pr-12">Rate and Improve your <span class="text-blue-600">Website CTR</span>  with <span class="text-blue-600">ChatGPT</span>
+                </h1>
+                <p class="text-base font-normal text-gray-700 mt-5 sm:text-lg lg:text-xl">You can evaluate your website and get feedback from ChatGPT within 5 seconds and will improve your conversion upto 25%.</p>
+                <ul class="flex flex-col justify-center gap-x-6 gap-y-3 text-sm font-medium text-gray-900 mt-6 sm:flex-row sm:flex-wrap sm:mt-8 lg:justify-start">
+                  <li class="flex items-center justify-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg> Personalised website improvements
+                  </li>
+                  <li class="flex items-center justify-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg> Website positive feedbacks
+                  </li>
+                  <li class="flex items-center justify-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg> AI generated scoring system
+                  </li>
+                  <li class="flex items-center justify-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg>It's free
+                  </li>
+                </ul>
+                <div class="flex flex-col gap-4 mt-6 sm:flex-row sm:items-center sm:justify-center sm:gap-5 sm:mt-8 lg:justify-start">
+                  <a class="isomorphic-link isomorphic-link--internal inline-flex items-center justify-center bg-blue-600 text-lg font-semibold text-white shadow-sm transition-all duration-150 rounded-xl px-8 py-4 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="analyze.html">Analyse your Website</a>
+                </div>
+              </div>
+              <div class="img-maincont">
+                <img class="w-full object-cover" src="img/webshot-rater-main.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-blue-50 pt-12 sm:pt-16 lg:pt-20 xl:pt-24">
+          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto text-center lg:max-w-3xl">
+              <h2 class="font-display text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">Imagine how you can improve your Conversation Rate with effective feedbacks</h2>
+            </div>
+          </div>
+        </section>
+        <div class="relative">
+          <div class="absolute grid inset-0" aria-hidden="true">
+            <div class="bg-blue-50"></div>
+            <div class="bg-white"></div>
+          </div>
+          <div class="relative pt-12 lg:pt-16">
+            <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div class="bg-white shadow-lg ring-2 ring-inset ring-gray-200 rounded-2xl">
+                  <div class="p-8 sm:p-12">
+                    <div class="inline-flex items-center gap-2">
+                      <svg aria-hidden="true" class="h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,67.47,120.16l26.19,26.18A8,8,0,0,1,88,160H24a8,8,0,0,1-8-8V88a8,8,0,0,1,13.66-5.66l26.48,26.48A104,104,0,0,1,232,184Z"></path>
+                      </svg>
+                      <p class="text-base font-semibold text-gray-700">Before</p>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold tracking-tight text-gray-900 mt-4 sm:text-3xl">The Challenges of Manual Website Analysis</h3>
+                    <ul class="text-base text-gray-900 mt-6 space-y-3 sm:text-lg">
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg class="h-3 w-3 fill-error-200" viewBox="0 0 6 6" aria-hidden="true">
+                            <circle cx="3" cy="3" r="3"></circle>
+                          </svg>
+                        </div>Unclear website layout causing user confusion
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg class="h-3 w-3 fill-error-200" viewBox="0 0 6 6" aria-hidden="true">
+                            <circle cx="3" cy="3" r="3"></circle>
+                          </svg>
+                        </div>Inconsistent branding and design across pages
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg class="h-3 w-3 fill-error-200" viewBox="0 0 6 6" aria-hidden="true">
+                            <circle cx="3" cy="3" r="3"></circle>
+                          </svg>
+                        </div>Unreliable and Time consuming website evaluation
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg class="h-3 w-3 fill-error-200" viewBox="0 0 6 6" aria-hidden="true">
+                            <circle cx="3" cy="3" r="3"></circle>
+                          </svg>
+                        </div>Lack of clear call-to-action elements
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="bg-blue-600 shadow-lg rounded-2xl">
+                  <div class="p-8 sm:p-12">
+                    <div class="inline-flex items-center gap-2">
+                      <p class="text-base font-semibold text-blue-100">After</p>
+                      <svg aria-hidden="true" class="h-6 w-6 text-blue-100" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,109.66l-48,48a8,8,0,0,1-11.32-11.32L212.69,104,170.34,61.66a8,8,0,0,1,11.32-11.32l48,48A8,8,0,0,1,229.66,109.66Zm-48-11.32-48-48A8,8,0,0,0,120,56V96.3A104.15,104.15,0,0,0,24,200a8,8,0,0,0,16,0,88.11,88.11,0,0,1,80-87.63V152a8,8,0,0,0,13.66,5.66l48-48A8,8,0,0,0,181.66,98.34Z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold tracking-tight text-white mt-4 sm:text-3xl">An personalised website feedback that will supercharge your CR</h3>
+                    <ul class="text-base text-white mt-6 space-y-3 sm:text-lg">
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg aria-hidden="true" class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path>
+                          </svg>
+                        </div>Strategically placed and compelling call-to-action elements
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg aria-hidden="true" class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path>
+                          </svg>
+                        </div>Consistent branding and design, ensuring a cohesive look
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg aria-hidden="true" class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path>
+                          </svg>
+                        </div>Clear, intuitive website layout for seamless user navigation
+                      </li>
+                      <li class="flex items-start gap-3">
+                        <div class="shrink-0 py-1.5">
+                          <svg aria-hidden="true" class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path>
+                          </svg>
+                        </div>Offering personalized content or recommendations based on user behavior
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="how-it-works" class="py-12 sm:py-16 lg:py-20 xl:py-32">
+          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto text-center lg:max-w-3xl">
+              <h2 class="font-display text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">You're <span class="text-blue-600">three easy steps</span>
+                <!-- -->away from getting personalised recommendation of your site </h2>
+            </div>
+            <div class="grid max-w-sm grid-cols-1 gap-12 mx-auto mt-12 text-center sm:mt-16 lg:max-w-none lg:grid-cols-3 lg:text-left">
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center bg-blue-600 text-xl font-bold text-white shadow-lg rounded-lg">1</div>
+                <h3 class="text-xl font-bold text-gray-900 mt-4 sm:text-2xl lg:mt-6">Capture Website Screenshot</h3>
+                <p class="text-sm font-normal text-gray-700 mt-2 sm:text-base sm:mt-3">Easily start the Webshot Ranker evaluation by uploading a screenshot of any website.</p>
+              </div>
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center bg-blue-600 text-xl font-bold text-white shadow-lg rounded-lg">2</div>
+                <h3 class="text-xl font-bold text-gray-900 mt-4 sm:text-2xl lg:mt-6">Explore Ratings</h3>
+                <p class="text-sm font-normal text-gray-700 mt-2 sm:text-base sm:mt-3">Dive into clear and visual reports to discover website ratings, shown on a scale of 0 to 100. </p>
+              </div>
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center bg-blue-600 text-xl font-bold text-white shadow-lg rounded-lg">3</div>
+                <h3 class="text-xl font-bold text-gray-900 mt-4 sm:text-2xl lg:mt-6">Suggestions and Improvements</h3>
+                <p class="text-sm font-normal text-gray-700 mt-2 sm:text-base sm:mt-3">Find practical suggestions and improvement tips specific to the website you're evaluating.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white">
+          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-start space-y-6 lg:space-y-8 xl:space-y-10">
+              <div class="bg-white shadow-sm ring-1 ring-inset ring-gray-200 rounded-3xl xl:sticky xl:top-20">
+                <div class="grid grid-cols-1 items-center -space-y-12 lg:grid-cols-2 lg:space-y-0">
+                  <div class="p-8 sm:p-12 lg:p-16">
+                    <p class="text-sm font-bold uppercase tracking-wide text-blue-600">Visual Reports</p>
+                    <h3 class="text-2xl font-bold tracking-tight text-gray-900 mt-4 sm:text-3xl sm:mt-6 lg:text-4xl">Insightful Analysis, at a Glance</h3>
+                    <p class="text-base font-normal text-gray-700 mt-4">Gain valuable insights through detailed visual reports that showcase the design, user interface, and user experience of websites. See a snapshot of each aspect for a comprehensive evaluation.</p>
+                  </div>
+                  <div class="img-contn">
+                    <img class="w-full object-cover" src="img/visual-report.gif" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white shadow-sm ring-1 ring-inset ring-gray-200 rounded-3xl xl:sticky xl:top-20">
+                <div class="grid grid-cols-1 items-center -space-y-6 lg:grid-cols-2 lg:space-y-0">
+                  <div class="p-8 sm:p-12 lg:p-16">
+                    <p class="text-sm font-bold uppercase tracking-wide text-blue-600">Free to All</p>
+                    <h3 class="text-2xl font-bold tracking-tight text-gray-900 mt-4 sm:text-3xl sm:mt-6 lg:text-4xl">Open Access for Everyone</h3>
+                    <p class="text-base font-normal text-gray-700 mt-4">Whether you're a seasoned developer, a creative designer, or a casual user, Webshot Rater ensures that everyone can easily make informed decisions. Our visual insights cater to a diverse audience, empowering users to understand websites comprehensively.</p>
+                  </div>
+                  <div class="img-contn">
+                    <img class="w-full object-cover" src="img/free-to-all.gif" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white shadow-sm ring-1 ring-inset ring-gray-200 rounded-3xl xl:sticky xl:top-20">
+                <div class="grid grid-cols-1 items-center -space-y-12 lg:grid-cols-2 lg:space-y-0">
+                  <div class="p-8 sm:p-12 lg:p-16">
+                    <p class="text-sm font-bold uppercase tracking-wide text-blue-600">User-Friendly for All</p>
+                    <h3 class="text-2xl font-bold tracking-tight text-gray-900 mt-4 sm:text-3xl sm:mt-6 lg:text-4xl">No Technical Expertise Required</h3>
+                    <p class="text-base font-normal text-gray-700 mt-4">You don't need to be a tech expert to benefit from Webshot Rater. The platform is designed for simplicity, allowing users of varying technical backgrounds to engage effortlessly and gain valuable insights into website performance.</p>
+                  </div>
+                  <div class="img-contn">
+                    <img class="w-full object-cover" src="img/know-how.gif" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white shadow-sm ring-1 ring-inset ring-gray-200 rounded-3xl xl:sticky xl:top-20">
+                <div class="grid grid-cols-1 items-center -space-y-12 lg:grid-cols-2 lg:space-y-0">
+                  <div class="p-8 sm:p-12 lg:p-16">
+                    <p class="text-sm font-bold uppercase tracking-wide text-blue-600">Effortless and Clear</p>
+                    <h3 class="text-2xl font-bold tracking-tight text-gray-900 mt-4 sm:text-3xl sm:mt-6 lg:text-4xl">Simplifying Website Evaluations</h3>
+                    <p class="text-base font-normal text-gray-700 mt-4">Our platform offers clear and concise ratings, cutting through confusion and providing straightforward assessments of your website.Efficiency is key with Webshot Rater. Our streamlined evaluation process saves time and effort, enabling efficient decision-making. Focus on what matters most without unnecessary complexities.</p>
+                  </div>
+                  <div class="img-contn">
+                    <img class="w-full object-cover" src="img/rating.gif" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white py-12 sm:py-16 lg:py-20">
+          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto text-center lg:max-w-3xl">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">FAQs</h2>
+              <!--<p class="text-base font-normal text-gray-600 mt-4 sm:text-lg">Have a different question and can't find the answer you're looking for? Reach out to our support team by-->
+                <!-- -->
+               <!-- <a target="_blank" rel="noopener noreferrer" href="#" class="isomorphic-link isomorphic-link--external text-blue-600 hover:text-blue-500 hover:underline">sending us an email</a>
+                and we'll get back to you as soon as we can.
+              </p>-->
+            </div>
+            <div class="grid grid-cols-1 gap-x-16 gap-y-5 mt-8 lg:grid-cols-2">
+              <div class="flow-root">
+                <div class="divide-gray-200 -my-6 divide-y">
+                  <div class="relative py-6">
+                    <details class="menu-details peer cursor-pointer transition-all duration-150">
+                      <summary class="flex select-none items-center justify-between text-lg font-medium text-gray-900 pr-16">Are there any specific browsers that work best with Webshot Rater for capturing website screenshots?</summary>
+                      <div class="mt-4">
+                        <p class="text-base text-gray-600">
+                          <span class="prose prose-blue">Webshot Rater is designed to work seamlessly with a variety of browsers. It is compatible with popular browsers such as Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari. Users can capture website screenshots using any of these browsers, ensuring flexibility and accessibility across different platforms. The goal is to provide a consistent and user-friendly experience, regardless of the browser choice, so that users can comfortably use Webshot Rater with their preferred browser.</span>
+                        </p>
+                      </div>
+                    </details>
+                    <div class="pointer-events-none invisible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:visible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"></path>
+                      </svg>
+                    </div>
+                    <div class="pointer-events-none visible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:invisible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="#currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="relative py-6">
+                    <details class="menu-details peer cursor-pointer transition-all duration-150">
+                      <summary class="flex select-none items-center justify-between text-lg font-medium text-gray-900 pr-16">Is there a cost associated with using Webshot Rater, or is it entirely free?</summary>
+                      <div class="mt-4">
+                        <p class="text-base text-gray-600">
+                          <span class="prose prose-blue">Webshot Rater is entirely free to use. There is no cost associated with accessing the platform and utilising its evaluation services. Users can take advantage of the comprehensive website assessments, including ratings, positive identification, and improvement suggestions, without incurring any charges. Our aim is to provide a valuable and accessible tool for users to enhance their websites without financial constraints.</span>
+                        </p>
+                      </div>
+                    </details>
+                    <div class="pointer-events-none invisible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:visible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"></path>
+                      </svg>
+                    </div>
+                    <div class="pointer-events-none visible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:invisible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="#currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flow-root">
+                <div class="divide-gray-200 -my-6 divide-y">
+                
+                  <div class="relative py-6">
+                    <details class="menu-details peer cursor-pointer transition-all duration-150">
+                      <summary class="flex select-none items-center justify-between text-lg font-medium text-gray-900 pr-16">What types of insights and recommendations does Webshot Rater provide for improving website performance?</summary>
+                      <div class="mt-4">
+                        <p class="text-base text-gray-600">
+                          <span class="prose prose-blue">Webshot Rater provides users with a range of insights and recommendations to enhance website performance. After evaluating a website based on screenshots, the tool offers actionable suggestions for improvement in various areas. These insights typically cover aspects such as design, user experience, and visual appeal. Specifically, Webshot Rater provides a breakdown of positives, highlighting the strengths of the webpage, and also offers improvement suggestions, identifying specific areas that could benefit from optimization or enhancement. Users can leverage these recommendations to make informed decisions and implement strategic changes to elevate their website's overall performance. </span>
+                        </p>
+                      </div>
+                    </details>
+                    <div class="pointer-events-none invisible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:visible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"></path>
+                      </svg>
+                    </div>
+                    <div class="pointer-events-none visible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:invisible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="#currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="relative py-6">
+                    <details class="menu-details peer cursor-pointer transition-all duration-150">
+                      <summary class="flex select-none items-center justify-between text-lg font-medium text-gray-900 pr-16">What level of technical knowledge or expertise is required to effectively use Webshot Rater and interpret the evaluation results?</summary>
+                      <div class="mt-4">
+                        <p class="text-base text-gray-600">
+                          <span class="prose prose-blue">Webshot Rater is designed to be user-friendly, requiring minimal technical knowledge or expertise. You don't need to be a tech expert to use the platform effectively. The process involves simple steps like capturing a screenshot, uploading it to the Webshot Rater platform, and receiving an evaluation with clear ratings and insights. The user interface is intuitive, making it accessible to individuals with varying levels of technical familiarity. The goal is to empower users, regardless of their technical background, to easily understand and interpret the evaluation results for actionable improvements to their websites.</span>
+                        </p>
+                      </div>
+                    </details>
+                    <div class="pointer-events-none invisible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:visible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"></path>
+                      </svg>
+                    </div>
+                    <div class="pointer-events-none visible absolute right-0 top-0 py-7 pl-7 pr-0 peer-open:invisible">
+                      <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="#currentColor" viewBox="0 0 256 256">
+                        <path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="relative">
+          <div class="absolute grid inset-0" aria-hidden="true">
+            <div class="bg-white"></div>
+            <div class="bg-blue-50"></div>
+          </div>
+          <div class="relative">
+            <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="bg-blue-600 rounded-3xl p-8 text-center sm:p-16 md:px-24 md:py-20 lg:px-28">
+                <div class="max-w-2xl mx-auto">
+                  <h2 class="font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Ready to take WebShot for a spin?</h2>
+                  <p class="max-w-lg text-base text-blue-100 mx-auto mt-4 sm:text-lg">Find out if a personalized AI support website rating is a good fit for you in just a few hours.</p>
+                </div>
+                <div class="flex flex-col justify-center gap-4 mt-8 sm:flex-row sm:items-center sm:gap-5">
+                  <a class="isomorphic-link isomorphic-link--internal inline-flex items-center justify-center bg-white text-lg font-semibold text-blue-600 shadow-sm transition-all duration-150 rounded-xl px-8 py-4 hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="analyze.html">Analyse your website for free</a>
+                </div>
+                <ul class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm font-medium text-white mt-8">
+                  <li class="inline-flex items-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg>Personalised website improvements                  </li>
+                  <li class="inline-flex items-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg>Website positive feedbacks
+                  </li>
+                  <li class="inline-flex items-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg>AI generated scoring system
+                  </li>
+                  <li class="inline-flex items-center gap-2">
+                    <svg aria-hidden="true" class="h-5 w-5 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                    </svg>It's free
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-blue-50 py-12 sm:py-16 lg:pt-20 xl:pt-24">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col items-center gap-4 mt-12 sm:mt-16 md:flex-row md:justify-between">
+            <p class="text-sm font-medium text-gray-600">© WebShot 2023 . All rights reserved</p>
+            <span class="flex items-center justify-center gap-2 md:justify-end">Made with ❤️ by <a class="text-blue-600" target="_blank" href="https://pickyassist.com/en/">Picky Assist</a></span>
+        </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

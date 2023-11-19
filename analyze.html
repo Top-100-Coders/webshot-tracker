@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/meta-img.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/webshot.js"></script>
+    <title>webshot rater</title>
+  </head>
+  <body>
+    <main>
+      <header class="heder_main_sectre">
+        <nav class="logo_box_main">
+          <div class="logo_main_gdgf">
+            <img src="img/WEBSHOT.png" alt="logo" />
+          </div>
+        </nav>
+      </header>
+      <section class="main-section md_pad_top_10px bg_light_bluer bg_grad_main open_ai_query">
+        <div class="main_block main_pad_min_bpox">
+          <div class="section_block pos_relative">
+            <div>
+              <div class="main_section_tab_hed_tab">
+                <div>
+                  <div class="logo_fgrt">
+                    <div class="d-flex">
+                      <img width="40px" src="img/star.png" alt="" />
+                    </div>
+                    <h1 class="text_hed_main">Rate your website</h1>
+                  </div>
+
+                  <p class="paraGRph_text">
+                    Upload screenshot of your website and get personalised
+                    <br />
+                    recommendations to improve your site.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="main_conten_upload_section pos_relative">
+                <div class="main_upload_outer">
+                  <div class="bordeer_rad_sec">
+                    <div class="upload_file_content">
+                      <form class="upload_file_form">
+                        <div class="draggable_main_tab_box"></div>
+                        <input type="file" class="el-upload__input webshot_file" id="fileInput" name="uploadedFile" accept=".jpg, .jpeg, .png"> 
+                        <label class="upload_image_label" for="fileInput">
+                          <div class="mar_top32">
+                            <img width="100px" src="img/file-storage.png" alt="" />
+                          </div>
+                        </label>
+                        <div class="mar_top32 image_main_tre">
+                          <img src="" alt="" />
+                          <div class="edit_btn">
+                            <svg
+                              width="18px"
+                              height="18px"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="1em"
+                              viewBox="0 0 512 512"
+                            >
+                              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                              <path
+                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="main_block_tr">
+                          <div class="uplod_btn" role="button">
+                            Analyse your website
+                          </div>
+                          <span class="rqst_msg"></span>
+                        </div>
+                        <!-- <span class="file_selected"></span> -->
+                        <!-- <div class="main_block_tr">
+                          <div class="uplod_btn" role="button">
+                            Upload your screenshot
+                          </div> -->
+                          <!-- <span class="text_para_htre">or Drop file here</span> -->
+                          <!-- <span class="rqst_msg"></span>
+                        </div> -->
+                      </form>
+                      
+                    </div>
+                    <div class="loader_main_box">
+                      <div class="ocrloader">
+                        <em></em>
+                        <div class="img_loader">
+                          <img src="img/screnshot.png" alt="" />
+                        </div>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="try_agin_btn text-center">
+                      <div class="">
+                        <img width="300" src="img/no-data.gif" alt="" />
+                        <p class="error_msg"></p>
+                        <div class="try_btn" role="button">Try Again</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="open_ai_success bg_grad_main">
+        <div class="main_sec_block">
+          <div class="main_side_sec_ttr w-100">
+            <div class="w-100 main_block_block_td">
+              <div class="main_block_tr_v">
+                <div class="side_screenshot_menu">
+                  <div>
+                    <img src="img/screenshot.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="text-center">
+                    <div role="button" class="try_btn">Try Another</div>
+                  </div>
+                </div>
+                <div class="main_block_dd_flex">
+                  <div>
+                    <div class="circle_main">
+                      <svg
+                        class="circle-chart"
+                        viewBox="-1 0 36.83098862 33.83098862"
+                        width="100"
+                        height="100"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="circle-chart__background"
+                          stroke="#eaeaea"
+                          stroke-width="4"
+                          fill="#fff"
+                          cx="16.91549431"
+                          cy="16.91549431"
+                          r="15.91549431"
+                        ></circle>
+                        <circle
+                          class="circle-chart__circle progress_circle"
+                          stroke="#06d79c"
+                          stroke-width="4"
+                          stroke-dasharray="100,100"
+                          stroke-linecap="round"
+                          fill="none"
+                          cx="18.51549431"
+                          cy="15.51549431"
+                          r="14.91549431"
+                        ></circle>
+                        <g class="circle-chart__info">
+                          <text
+                            class="circle-chart__subline progress_circle_text"
+                            x="16.91549431"
+                            y="20.5"
+                            alignment-baseline="auto"
+                            text-anchor="middle"
+                            font-size="8"
+                          >
+                            100%
+                          </text>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="text_block_hed">Webscore</h4>
+                  <p class="paraGRph_text text-center">
+                    Values are estimated and may vary. The performance score is
+                    calculated directly from these metrics.See calculator.
+                  </p>
+                  <div class="dd_flex_main_block_tab">
+                    <span class="lh-scorescale-range lh-scorescale-range--fail"
+                      >0–49</span
+                    >
+                    <span
+                      class="lh-scorescale-range lh-scorescale-range--average"
+                      >50–89</span
+                    >
+                    <span class="lh-scorescale-range lh-scorescale-range--pass"
+                      >90–100</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="w-100">
+                <div>
+                  <div class="main_sec_box_tab bg_light_yelow improvement_points">
+                    <div class="main_dois_flex">
+                      <span class="text_maoin_t">CRO checklist</span>
+                    </div>
+                    <div class="improve_list">
+                    </div>
+                  </div>
+                  <div class="main_sec_box_tab bg_light_grn positive_points">
+                    <div class="main_dois_flex">
+                      <span class="text_maoin_t">Positives </span>
+                    </div>
+                    <div class="positive_list">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
