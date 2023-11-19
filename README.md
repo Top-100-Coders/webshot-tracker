@@ -9,7 +9,7 @@ WebshotRater analyzes website screenshots to generate an assessment score and ac
 ## Getting Started
 
 To use WebshotRater, follow these steps:
-1. Open api key expired, so need to change the api key from api/index.php at line number 112
+1. Open ai API key expired, so need to change the api key from api/index.php at line number 112
 2. **Capture a Screenshot:** Obtain a clear screenshot of the webpage you want to evaluate.
 3. **Upload:** Upload the screenshot to the WebshotRater platform.
 4. **Analysis:** Receive an overall rating out of 100 along with a detailed breakdown of positives and improvements needed.
