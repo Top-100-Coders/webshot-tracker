@@ -44,6 +44,8 @@ To use WebshotRater, follow these steps:
 - *Sidharth*
   - Focuses on creating an engaging landing page that captures users' attention.
   - Collaborates with the team to incorporate key features and attract users to explore further.
+## Demo - video link
+[https://www.flexclip.com/share/44995273597f6c27ee11b24cbd264372a790e45.html]
 
 ## Disclaimer
 
